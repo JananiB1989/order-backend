@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.os.orders"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "orderBackend",
+    "packageName": "com.os.orders",
+    "packageFolder": "com/os/orders",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ODZiNjcxMzdlYjBiZGNiZDFmOGE1MWQ4NDVhZDMxMmI5M2RiOTljZWYzOTNhMjZiOWU0MWYzYzAwMzQwZjgxZjg1ZTA1ZjZiNDE2NjQzZDU5NmU2NmJmZDRjODhjMjZhZmZiNDE3NjEwZTNmZjk2M2FlMzkxMjQxMGUzNTljMzY=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1614656922219,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
