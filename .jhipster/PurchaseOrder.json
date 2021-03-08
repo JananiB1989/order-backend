@@ -1,0 +1,52 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "orderBackend",
+  "relationships": [
+    {
+      "relationshipName": "orderLine",
+      "otherEntityName": "orderLine",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "purchaseOrder"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "orderNo",
+      "fieldType": "Long",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderdatetime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "buyer",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "seller",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "ordertotal",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": []
+    }
+  ],
+  "changelogDate": "20210302035642",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "purchase_order",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no",
+  "microserviceName": "orderBackend"
+}

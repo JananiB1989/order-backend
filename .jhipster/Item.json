@@ -1,0 +1,45 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "orderBackend",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "itemId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "itemprice",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "weightUOM",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "volume",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "volumeUOM",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210302040246",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "item",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no",
+  "microserviceName": "orderBackend"
+}
