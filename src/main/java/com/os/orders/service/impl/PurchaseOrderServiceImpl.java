@@ -36,8 +36,9 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
     @Override
     @Transactional(readOnly = true)
     public List<PurchaseOrder> findAll() {
-        log.debug("Request to get all PurchaseOrders");
-        return purchaseOrderRepository.findAll();
+        log.debug("Request to get all PurchaseOrders in created status");
+        String status = "CREATED";
+        return purchaseOrderRepository.findByStatus(status);
     }
 
 

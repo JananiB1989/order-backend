@@ -12,7 +12,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
-    url: jdbc:tc:postgresql:latest:///orderBackend?TC_TMPFS=/testtmpfs:rw
+    #    url: jdbc:tc:postgresql:latest:///orderBackend?TC_TMPFS=/testtmpfs:rw
+    url: jdbc:postgresql://localhost:5432/postgres
     username: orderBackend
     password:
     hikari:
@@ -20,3 +21,8 @@ spring:
       auto-commit: false
   jpa:
     database-platform: io.github.jhipster.domain.util.FixedPostgreSQL10Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true

@@ -47,7 +47,7 @@ spring:
     database-platform: io.github.jhipster.domain.util.FixedPostgreSQL10Dialect
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev

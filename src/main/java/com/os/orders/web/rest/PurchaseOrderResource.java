@@ -85,6 +85,7 @@ public class PurchaseOrderResource {
     @GetMapping("/purchase-orders")
     public List<PurchaseOrder> getAllPurchaseOrders() {
         log.debug("REST request to get all PurchaseOrders");
+        System.out.println("purchaseOrderService.findAll():::"+purchaseOrderService.findAll());
         return purchaseOrderService.findAll();
     }
 
