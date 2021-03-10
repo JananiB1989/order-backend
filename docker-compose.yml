@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: 'orderservice'
+    image: 'orderbackend'
     build:
       context: .
     ports:
